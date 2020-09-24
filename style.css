@@ -1,0 +1,82 @@
+@media (min-width:420px){
+    .pink{
+        background-size: 5%;
+        background-image: linear-gradient(to right, rgb(255, 184, 255) 1px, white 25px);
+        /* animation */
+        animation: animate-pink 15s linear infinite;
+    }
+
+    @keyframes animate-pink {
+        from{
+            background-position: 0 0;
+        }
+
+        to{
+            background-position: 100% 0;
+        }
+    }
+    
+    .green{
+        background-size: 1% 10%;
+        background-image: linear-gradient(to top, rgb(9, 255, 154) 1px, #ffffff00 30px);
+        /* animation */
+        animation: animate-green 15s linear infinite;
+    }
+
+    @keyframes animate-green {
+        from{
+            background-position: 0 0;
+        }
+
+        to{
+            background-position: 0 -100%;
+        }
+    }
+}
+
+@media (max-width:420px){
+    .pink{
+        background-size: 1% 6%;
+        background-image: linear-gradient(to bottom, rgb(255, 184, 255) 1px, white 25px);
+        /* animation */
+        animation: animate-pink 15s linear infinite;
+    }
+
+    @keyframes animate-pink {
+        from{
+            background-position: 0 0;
+        }
+
+        to{
+            background-position: 0 100%;
+        }
+    }
+    
+    .green{
+        background-size: 12%;
+        background-image: linear-gradient(to right, rgb(9, 255, 154) 1px, #ffffff00 30px);
+        /* animation */
+        animation: animate-green 15s linear infinite;
+    }
+
+    @keyframes animate-green {
+        from{
+            background-position: 0 0;
+        }
+
+        to{
+            background-position: 100% 0;
+        }
+    }
+}
+
+body{
+    margin: 0;
+}
+
+.pink, .green{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: 0 0;
+}
